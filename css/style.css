@@ -35,6 +35,10 @@ header h1 {
   font-size: 2.5rem;
   color: white;
   margin: 2rem;
+
+  @media screen and (max-width: 700px) {
+  font-size: 1.5rem;
+  }
 }
 
 /* Section Layout */
@@ -72,9 +76,9 @@ header h1 {
   margin-bottom: 1.5rem;
 }
 
-.info{
+.info p{
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .address{
@@ -84,7 +88,7 @@ header h1 {
 
 .opening-hours {
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .opening-hours h2 {
@@ -93,14 +97,14 @@ header h1 {
 }
 
 .opening-hours p {
-  font-size: 2rem;
+  font-size: 1rem;
   margin: 5px 0;
 }
 
 .socials .buttons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .socials .btn {
