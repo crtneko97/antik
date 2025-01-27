@@ -1,0 +1,147 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Antic Didone", serif;
+  font-weight: 400;
+  font-style: normal;
+  background: url('../images/science.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #f5f5f5;
+}
+
+main {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(43, 43, 43, 0.9);
+  color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.9);
+}
+
+/* Header styling */
+header h1 {
+  text-align: start;
+  font-family: "Antic Didone", serif;
+  font-size: 2.5rem;
+  color: white;
+  margin: 2rem;
+}
+
+/* Section Layout */
+.location .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.location .row.reverse {
+  flex-direction: row-reverse; /* Reverses the order of elements */
+}
+
+.location .left, .location .right {
+  flex: 1 1 45%; /* Each item takes up 45% of the width */
+  margin: 10px;
+}
+
+.location .left img, .location .maps img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right .info, .right .contact, .right .opening-hours {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.info{
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.address{
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.opening-hours {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.opening-hours h2 {
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.opening-hours p {
+  font-size: 2rem;
+  margin: 5px 0;
+}
+
+.socials .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socials .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: "Antic Didone", serif;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  background-color: gray;
+  transition: background-color 0.3s ease;
+}
+
+.socials .instagram {
+  background-color: #e1306c;
+}
+
+.socials .facebook {
+  background-color: #3b5998;
+}
+
+.socials .btn:hover {
+  background-color: green;
+}
+a{
+  color: white;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .location .row {
+    flex-direction: column; /* Stack content vertically on smaller screens */
+  }
+
+  .location .left, .location .right {
+    flex: 1 1 100%; /* Full width on mobile */
+  }
+
+  .location .left img, .location .maps img {
+    max-width: 90%;
+  }
+}
+
